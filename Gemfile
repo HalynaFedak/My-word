@@ -14,7 +14,7 @@ group :development do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.18'
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -38,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
